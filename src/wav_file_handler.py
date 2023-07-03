@@ -102,7 +102,7 @@ class Wav_File_Handler:
             
         '''
 
-        if segment_length_in_seconds <= 0.0 or segment_length_in_seconds > librosa.get_duration(self.__wav_file, sr=self.sample_rate):
+        if segment_length_in_seconds <= 0.0 or segment_length_in_seconds > librosa.get_duration(y=self.__wav_file, sr=self.sample_rate):
             
             return np.array([self.__wav_file])
             
